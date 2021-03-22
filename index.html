@@ -18,32 +18,6 @@ th, td {
     box sizing:border-box;
   }
   <body>
- 
- <h2 class="w3-center">Automatic Slideshow</h2>
-
-<div class="w3-content w3-section" style="max-width:500px">
-  <img class="mySlides" src="https://user-images.githubusercontent.com/79895560/111874918-24e42100-89d2-11eb-9b52-3eeaabe102bb.jpeg" style="width:100%">
-  <img class="mySlides" src="https://user-images.githubusercontent.com/79895560/111874921-26ade480-89d2-11eb-8062-ab717e6bcf0f.jpeg" style="width:100%">
-  <img class="mySlides" src="https://user-images.githubusercontent.com/79895560/111991577-6fd77300-8b4f-11eb-989c-6109069f38bd.JPG" style="width:100%">
-</div>
-
-<script>
-var myIndex = 0;
-carousel();
-
-function carousel() {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";  
-  }
-  myIndex++;
-  if (myIndex > x.length) {myIndex = 1}    
-  x[myIndex-1].style.display = "block";  
-  setTimeout(carousel, 2000); // Change image every 2 seconds
-}
- </script>
- 
  table, th, td {
   border: 5px solid #D8BFD8;
   border-left: none;
@@ -114,6 +88,32 @@ footer {
     height: auto;
   }
 }
+ 
+ <h2 class="w3-center">Automatic Slideshow</h2>
+
+<div class="w3-content w3-section" style="max-width:500px">
+  <img class="mySlides" src="https://user-images.githubusercontent.com/79895560/111874918-24e42100-89d2-11eb-9b52-3eeaabe102bb.jpeg" style="width:100%">
+  <img class="mySlides" src="https://user-images.githubusercontent.com/79895560/111874921-26ade480-89d2-11eb-8062-ab717e6bcf0f.jpeg" style="width:100%">
+  <img class="mySlides" src="https://user-images.githubusercontent.com/79895560/111991577-6fd77300-8b4f-11eb-989c-6109069f38bd.JPG" style="width:100%">
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+ </script>
+ 
 </style>
 </head>
 </body>
